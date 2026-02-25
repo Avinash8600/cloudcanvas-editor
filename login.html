@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | CloudCanvas Editor</title>
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+        <h1>CloudCanvas</h1>
+        <p class="subtitle">Sign in to continue editing</p>
+
+        <form id="login-form">
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label>Email Address</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label>Password</label>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <p class="register-link">
+            Don't have an account?
+            <a href="register.html">Register</a>
+        </p>
+
+        <p id="error-message" class="error"></p>
+    </div>
+
+</div>
+
+<script src="login.js" type="module"></script>
+</body>
+</html>
