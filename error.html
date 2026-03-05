@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CloudCanvas - Error</title>
+
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.error-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+}
+
+.error-card{
+    background: var(--bg-secondary-color);
+    padding:40px;
+    border-radius:var(--rd-md);
+    text-align:center;
+    box-shadow:var(--shadow-md);
+    width:420px;
+}
+
+.error-code{
+    font-size:72px;
+    font-weight:700;
+    color:var(--bg-danger-color);
+    margin-bottom:10px;
+}
+
+.error-title{
+    font-size:var(--font-size-2xl);
+    margin-bottom:10px;
+}
+
+.error-text{
+    color:var(--text-secondary-color);
+    margin-bottom:25px;
+}
+
+.home-btn{
+    display:inline-block;
+    padding:var(--padding-md);
+    background:var(--bg-success-color);
+    color:white;
+    border-radius:var(--rd-md);
+    text-decoration:none;
+    font-weight:500;
+    transition:var(--transition-fast);
+}
+
+.home-btn:hover{
+    background:var(--bg-hover-color);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="error-container">
+
+    <div class="error-card">
+
+        <div class="error-code">404</div>
+
+        <h2 class="error-title">Page Not Found</h2>
+
+        <p class="error-text">
+            The page you are looking for doesn't exist or may have been moved.
+        </p>
+
+        <a href="index.html" class="home-btn">
+            Go Back Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
