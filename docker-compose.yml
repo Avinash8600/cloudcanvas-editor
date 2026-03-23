@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  app:
+    image: cloud-app
+    container_name: cloud-app-container
+    ports:
+      - "80:80"
+

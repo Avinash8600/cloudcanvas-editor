@@ -1,14 +1,14 @@
 # Use the Nginx lightweight images as base
 FROM nginx:alpine
 
-# Delete the default nginx website files
+# Delete the default nginx websites files
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy all projet files (HTML, CSS, JS) into the nginx web folder
+# Copy all project files (HTML, CSS, JS)
 COPY . /usr/share/nginx/html
 
-# Tell docker that container will use port 80
+# Tells docker that container will use port 80
 EXPOSE 80
 
-# Start nginx server and keep container running 
-CMD ["nginx", "-g", "daemon off;"] 
+# Start nginx server and keep container running
+CMD ["nginx", "-g", "daemon off;"]
