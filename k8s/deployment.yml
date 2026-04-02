@@ -1,0 +1,23 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: cloud-app-deployment
+  labels:
+    app: cloud-app
+  namespace: cloud-app-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloud-app
+  template:
+    metadata:
+      labels:
+        app: cloud-app
+    spec:
+      containers:
+      - name: cloud-app-container
+        image: avindock/cloud-canvas-app
+        ports:
+        - containerPort: 80
+
